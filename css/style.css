@@ -6,6 +6,7 @@ sans-serif; */
 
 :root {
   --blue: #3A68B8;
+  --bgc: #020A18;
   --white: #FFFFFF;
   --gray70: #B4B7BB;
   --gray60: #9C9FA5;
@@ -257,6 +258,75 @@ header {
         }
         @media screen and (max-width: 768px) {
           width: 100%;
+        }
+      }
+    }
+  }
+}
+
+main {
+  background-color: var(--bgc);
+  .container {
+
+    .section_one{
+      padding-bottom: 130px;
+      width: 100%;
+      max-width: 1277px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--white);
+
+      svg {
+         width: 725px;
+      }
+
+      div {
+        width: 100%;
+        max-width: 485px;
+        h1 {
+          font-size: 40px;
+          font-weight: 700;
+          line-height: 1.3;
+        }
+
+        p {
+          color: var(--gray70);
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 1.6;
+          margin-bottom: 50px;
+        }
+
+        @media screen and (max-width: 1024px) {
+          h1 {
+            font-size: 30px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      @media screen and (max-width:768px) {
+        flex-direction: column;
+        padding-bottom: 64px;
+
+        svg {
+         width: 300px;
+        }
+        div{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+
+          h1 {
+            font-size: 25px;
+          }
+          p {
+            font-size: 12px;
+          }
         }
       }
     }
