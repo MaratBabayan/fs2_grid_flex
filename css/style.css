@@ -348,7 +348,7 @@ main {
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      background-color: var(--itembgc);
+      background: linear-gradient(to top, #0D1522, #0E1523, #101825, #131B28, #161D2A, #171E2B, #18202C);
       text-align: center;
       border-radius: 10px;
       box-sizing: border-box;
@@ -464,7 +464,7 @@ main {
 /* Footer */
 
 footer {
-  background-color: var(--bgc);
+  background: linear-gradient(to top, #0D1522, #0E1523, #101825, #131B28, #161D2A, #171E2B, #18202C);
 
   .container {
     display: flex;
